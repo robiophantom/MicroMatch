@@ -47,7 +47,7 @@ const Navbar = () => {
                             onClick={openUserTypeModal}
                             className='px-8 py-3 bg-[#104581] text-white rounded-lg hover:bg-[#0d3a6d] transition-all'
                         >
-                            Get Started
+                            Complete Profile
                         </button>
                     </div>
                     <motion.div whileTap={{ scale: 0.6 }} className="md:hidden cursor-pointer" onClick={handleToggle}>
@@ -71,7 +71,7 @@ const Navbar = () => {
                                 }}
                                 className='w-full text-white px-8 py-5 bg-[#104581] rounded-lg hover:bg-[#0d3a6d] transition-all'
                             >
-                                Get Started
+                                Complete Profile
                             </button>
                         </div>
                     </motion.ul>
