@@ -27,7 +27,11 @@ app.use(express.json({ limit: '50mb' })); // Increased for media uploads
 app.use(express.urlencoded({ extended: true, limit: '50mb' })); // Add this line
 
 app.use(cors({
-  origin: 'https://micromatch.onrender.com'  // Replace with your actual frontend URL
+  origin: [
+    'http://localhost:5173',
+    'https://micromatch.onrender.com',
+    'https://kind-meadow-0a1d96300.1.azurestaticapps.net'
+  ]
 }));
 
 // Routes
