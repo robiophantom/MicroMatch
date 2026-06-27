@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - frontend/**
+      - client/**
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
