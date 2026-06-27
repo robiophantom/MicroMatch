@@ -34,6 +34,14 @@ app.use(cors({
   ]
 }));
 
+// Status
+app.get('/', (req, res) => {
+  res.json({
+    message: 'MicroMatch Backend is running',
+    status: 'OK'
+  });
+});
+
 // Routes
 app.use('/api/influencers', influencerRoutes);
 app.use('/api/auth', authRoutes);
